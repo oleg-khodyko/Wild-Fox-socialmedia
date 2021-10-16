@@ -7,7 +7,7 @@ import News from './News/news';
 import Profile from './Profile/profile';
 import Settings from './Settings/settings';
 
-const Content = ({dialogs, messages, posts}) => {
+const Content = ({state, posts}) => {
 
     return (
         <div className={classes.wrapper}>
@@ -15,7 +15,10 @@ const Content = ({dialogs, messages, posts}) => {
                    render={() => <Profile posts={posts}/>} 
             />
             <Route path="/dialogs" 
-                   render={() => <Dialogs dialogs={dialogs} messages={messages} />} 
+                   render={() => <Dialogs 
+                                    dialogs={state.dialogsData} 
+                                    messages={state.messagesData} 
+                                />} 
             />
             <Route path="/news" component={News} content='News' />
             <Route path="/music" component={Music} />

@@ -5,18 +5,17 @@ import Header from "../Header/header";
 import Navigation from "../Navigation/navigation";
 import classes from './app.module.css';
 
-const App = ({dialogs, messages, posts}) => {
-
+const App = ({state}) => {
+debugger;
     return (
         <BrowserRouter>
             <div className={classes.wrapper}>
                 <Header />
                 <Navigation />
                 <div className={classes.content}>
-                    <Content 
-                    dialogs={dialogs} 
-                    messages={messages}
-                    posts={posts}/>
+                <Content 
+                     state={state.dialogsPage} 
+                     posts={state.profilePage.postsData}/> 
                 </div> 
             </div>
         </BrowserRouter>
