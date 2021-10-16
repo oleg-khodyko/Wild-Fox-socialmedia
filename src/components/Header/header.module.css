@@ -1,0 +1,10 @@
+.wrapper {
+    grid-area: h;
+    width: 100%;
+    background-color:#eaeffa;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: 'l m s';
+    grid-gap: 5px;
+    border-radius: 15px;
+}

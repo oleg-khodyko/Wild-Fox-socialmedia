@@ -1,0 +1,38 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 'a b';
+    width: 600px;
+}
+
+.avatar {
+    grid-area: a;
+    margin-left: 20px;
+}
+    .avatar img {
+        width: 110px;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+        .avatar img:hover {
+            width: 220px;
+            border-radius: 50%;
+            transform: rotate(360deg);
+            transition: .5s;
+        
+        }
+
+.description {
+    grid-area: b;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+    .fullName {
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .info {
+        margin-top: 28px;
+        font-size: 15px;
+        line-height: 26px;
+    }

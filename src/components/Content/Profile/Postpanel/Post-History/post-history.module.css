@@ -1,0 +1,30 @@
+.wrapper {
+    margin-top: 40px;
+    margin-left: 25px;
+
+}
+
+.messageContent {
+    margin-top: 25px;
+    width: 620px;
+    min-height: 50px;
+    display: grid;
+    grid-template-columns: 60px;
+    grid-template-areas: "l m";
+
+}
+.logo {
+    grid-area: l;
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+}
+
+.message {
+    grid-area: m;
+    font-weight: 400;
+    line-height: 22px;
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 10px;
+}

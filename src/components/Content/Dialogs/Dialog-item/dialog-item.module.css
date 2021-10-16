@@ -1,0 +1,11 @@
+.dialog {
+    margin-top: 10px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.active {
+    font-weight: 500;
+    margin-left: 2px;
+    transition: .5s;
+    
+}

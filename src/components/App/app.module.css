@@ -1,0 +1,16 @@
+.wrapper {
+    width: 900px;
+    margin: 20px auto 0 auto;
+    display: grid;
+    grid-template-rows: 80px;
+    grid-template-columns: 180px 1fr;
+    grid-template-areas: 
+    'h h'
+    'n c';
+}
+
+.content {
+    grid-area: c;
+    padding-top: 25px;
+    padding-left: 10px;
+}
